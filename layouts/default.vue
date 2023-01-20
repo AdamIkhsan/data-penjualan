@@ -1,6 +1,6 @@
-<template>
+<template >
   <div>
-    <h1>DATA PEMASUKAN BARANG</h1>
+    <h1 class="text-center">DATA PEMASUKAN BARANG</h1>
     <hr />
     <slot />
   </div>

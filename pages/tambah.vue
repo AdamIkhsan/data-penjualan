@@ -1,13 +1,34 @@
 <template>
   <div>
-    <h1>Isi Data Barang</h1>
-    <form @submit.prevent="simpan()">
-      <input v-model="nama_barang" placeholder="nama_barang" /> <br />
-      <input v-model="jumlah_barang" placeholder="jumlah_barang" /> <br />
-      <input v-model="harga_barang" placeholder="harga_barang" /> <br />
-      <button type="submit">Kirim</button>
-      <NuxtLink to="/">Kembali</NuxtLink>
-    </form>
+    <div class="col-md-6 m-auto p-3">
+      <h1 class="text-center">Isi Data Barang</h1>
+      <form @submit.prevent="simpan()">
+        <input
+          v-model="nama_barang"
+          placeholder="nama barang"
+          class="form-control"
+        />
+        <br />
+        <input
+          v-model="jumlah_barang"
+          placeholder="jumlah barang"
+          class="form-control"
+        />
+        <br />
+        <input
+          v-model="harga_barang"
+          placeholder="harga barang"
+          class="form-control"
+        />
+        <br />
+        <button type="submit" class="btn btn-info text-white me-3">
+          Kirim
+        </button>
+        <NuxtLink to="/" class="btn btn-dark text-decoration-none text-light"
+          >Kembali</NuxtLink
+        >
+      </form>
+    </div>
   </div>
 </template>
 

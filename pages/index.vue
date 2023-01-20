@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <h2>Data Barang</h2>
-    <NuxtLink to="/tambah">Isi Data Barang</NuxtLink>
-    <table border="1" width="100%">
+  <div class="container">
+    <h2 class="text-center">Data Barang</h2>
+    <NuxtLink to="/tambah" class="btn btn-primary text-decoration-none mb-3"
+      >Isi Data Barang</NuxtLink
+    >
+    <table border="1" width="100%" class="table bg-dark text-light">
       <thead>
         <tr>
           <th>#</th>
@@ -12,8 +14,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="visitor in datas" :key="visitor.id">
-          <td>{{ visitor.id }}</td>
+        <tr v-for="(visitor, i) in datas" :key="visitor.id">
+          <td>{{ i }}</td>
           <td>{{ visitor.nama_barang }}</td>
           <td>{{ visitor.jumlah_barang }}</td>
           <td>{{ visitor.harga_barang }}</td>
